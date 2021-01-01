@@ -8,8 +8,21 @@
   <body>
   <div class="wrapper fadeInDown">  
     <div id="formContent">
-      <a href="https://us-central1-sneakieaco.cloudfunctions.net/api/login">Login via Discord</a>
-    </div> 
+      <!-- Sign Up Form -->
+      <h2 class="active"> Sign In </h2>
+      <form class="signInForm">
+        <input type="email" class="fadeIn second" name="signInEmail" placeholder="email" autocomplete="on">
+        <input type="password" class="fadeIn third" name="signInPassword" placeholder="password" autocomplete="on">
+        <input type="submit" class="fadeIn fourth" name="submit" value="Sign In">
+        <br>
+        <p class="error"></p>
+      </form>
+      <br>
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        Don't have a account? <a class="underlineHover" href="signup.html">Sign Up</a>
+      </div>
+    </div>
   </div>
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>

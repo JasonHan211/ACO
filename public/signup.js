@@ -20,7 +20,7 @@ signUpForm.addEventListener('submit', (e)=>{
     {
       firebase.auth().createUserWithEmailAndPassword(email, password)
     .then(user => {
-      console.log('registered', user);
+      console.log('registered', user.user.email);
     })
     .catch(error => {
       signUpForm.querySelector('.error').textContent = error.message;
